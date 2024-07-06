@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" Content="text/html;charset=UTF-8">
-<TITLE>SU2WebGL</TITLE>
+<TITLE>Просмотр 3D модели</TITLE>
 <!--
 <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=no" />
 -->
@@ -170,7 +170,7 @@
 	mrot.makeRotationX(-Math.PI/2);
 	axis = new THREE.AxisHelper(5000);axis.position.set(0, 0, 0);axis.applyMatrix(mrot);scene.add(axis);
 	
-    // init materials
+    // инициализация материалов
 	codeclips = "vec3 clipDIST = vec3( 3386.808,800.000,1699.542 ) + vec3(40,40,40);vec3 clipBASE = vec3( 489.513,0.000,-2638.390 ) - vec3(20,20,20);"
     for(var i=0; i < mat.length; i++){
      materials[i] = new THREE.ShaderMaterial( {
